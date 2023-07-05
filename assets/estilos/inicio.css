@@ -14,15 +14,15 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Noto Sans JP', sans-serif;
-
+    background-image: url(../images/fundo.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
     max-width: 1140px;
     margin: auto;
 }
-
-
 
 nav a {
     text-decoration: none;
@@ -38,7 +38,7 @@ h1 {
 /* CABEÇELHO */
 
 header {
-    background-color: var(--cor2);;
+    background-color: var(--cor2);
 }
 
 .header {
@@ -53,10 +53,6 @@ header {
     background-size: cover;
     width: 200px;
     height: 100px;
-}
-
-.menu-header {
-
 }
 
 .menu-header ul {
@@ -84,6 +80,9 @@ header {
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+    background-color: #FFF;
+    border-left: 2px solid #C04A1F;
+    border-right: 2px solid #C04A1F;
 }
 
 .apresen-content {
@@ -135,7 +134,11 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    width: 1140px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFF;
+    border-left: 2px solid #C04A1F;
+    border-right: 2px solid #C04A1F;
 }
 
 .entrega-content {
@@ -176,4 +179,79 @@ header {
     background-size: cover;
     width: 100%;
     height: 600px;
+}
+
+.quali {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFF;
+    border-left: 2px solid #C04A1F;
+    border-right: 2px solid #C04A1F;
+}
+
+.quali-content {
+    box-sizing: border-box;
+    grid-column: 2 / 3;
+    padding: 48px;
+}
+
+.quali-content h1 {
+    margin-bottom: 50px;
+    font-weight: bolder;
+    line-height: 50px;
+}
+
+.quali-content p {
+    font-size: 20px;
+    color: #999;
+    margin-bottom: 80px;
+}
+
+.quali button {
+    background-color: var(--cor1);
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    border: 0;
+    color: var(--cor3);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quali button:hover {
+    color: var(--cor2);
+    font-size: 30px;
+}
+
+.quali-img {
+    background-image: url(../images/qualidade.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    grid-row: 1 / 2;
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+    margin-top: -18px;
+    background-color: var(--cor2);
+    height: 100px;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
 }
