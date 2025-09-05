@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça nosso catálogo de produtos na Mano Telhas e Tijolos. Oferecemos tijolos, telhas e outros materiais de construção de alta qualidade para sua obra.">
+    <link rel="stylesheet" href="assets/estilos/products.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Produtos - Mano Telhas e Tijolos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <div class="logo"></div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" target="_self" class="nav-link">INÍCIO</a></li>
+                    <li class="nav-item"><a href="products.html" target="_self" class="nav-link">PRODUTOS</a></li>
+                    <li class="nav-item"><a href="contato.html" target="_self" class="nav-link">CONTATO</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="products-container container">
+        <h1 class="products-title">Nossos Produtos</h1>
+
+        <!-- Navegação das abas -->
+        <div class="tab-nav" role="tablist" aria-label="Categorias de Produtos">
+            <button class="tab-button active" role="tab" aria-selected="true" aria-controls="tijolos-panel" id="tijolos-tab">Tijolos</button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="telhas-panel" id="telhas-tab">Telhas</button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="outros-panel" id="outros-tab">Outros Materiais</button>
+        </div>
+
+        <!-- Conteúdo das abas -->
+        <div class="tab-content">
+            <!-- Painel de Tijolos -->
+            <div id="tijolos-panel" class="tab-panel active" role="tabpanel" aria-labelledby="tijolos-tab">
+                <h2>Tijolos</h2>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150" alt="Tijolo de 6 furos" class="product-image">
+                    <div class="product-details">
+                        <h3>Tijolo 6 Furos</h3>
+                        <ul>
+                            <li><strong>Largura:</strong> 9 cm</li>
+                            <li><strong>Tipos:</strong> Vedação</li>
+                            <li><strong>Fornecedores:</strong> Cerâmica Tatuí, Olaria do Vale</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150" alt="Tijolo maciço vermelho" class="product-image">
+                    <div class="product-details">
+                        <h3>Tijolo Maciço</h3>
+                        <ul>
+                            <li><strong>Largura:</strong> 5 cm</li>
+                            <li><strong>Tipos:</strong> Estrutural, Aparente</li>
+                            <li><strong>Fornecedores:</strong> Cerâmica Vermelha</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Painel de Telhas -->
+            <div id="telhas-panel" class="tab-panel" role="tabpanel" aria-labelledby="telhas-tab">
+                <h2>Telhas</h2>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150" alt="Telha portuguesa de cerâmica" class="product-image">
+                    <div class="product-details">
+                        <h3>Telha Portuguesa</h3>
+                        <ul>
+                            <li><strong>Largura:</strong> 24 cm</li>
+                            <li><strong>Tipos:</strong> Esmaltada, Natural</li>
+                            <li><strong>Fornecedores:</strong> Cejatel, Temax</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Painel de Outros Materiais -->
+            <div id="outros-panel" class="tab-panel" role="tabpanel" aria-labelledby="outros-tab">
+                <h2>Outros Materiais</h2>
+                <div class="product-item-placeholder">
+                    <p>Em breve, mais informações sobre outros materiais.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Site criado por <a href="https://github.com/MatheusFP18" target="_blank">Matheus Petry</a></p>
+        <p>&copy; Todos os diretos reservados a Mano Telhas e Tijolos</p>
+    </footer>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>
