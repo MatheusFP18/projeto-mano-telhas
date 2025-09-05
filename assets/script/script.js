@@ -11,15 +11,23 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     navMenu.classList.remove("active");
 }));
 
-const tabButtons = document.querySelectorAll(".tab-button[role='tab']");
-const tabPanels = document.querySelectorAll(".tab-panel[role='tabpanel']");
+function initializeTabs() {
+    const tabButtons = document.querySelectorAll(".tab-button[role='tab']");
+    const tabPanels = document.querySelectorAll(".tab-panel[role='tabpanel']");
 
-if (tabButtons.length > 0 && tabPanels.length > 0) {
+    if (tabButtons.length === 0 || tabPanels.length === 0) {
+        return;
+    }
+
     tabButtons.forEach(button => {
         button.addEventListener("click", () => {
-            // Pega o painel alvo
             const targetPanelId = button.getAttribute("aria-controls");
             const targetPanel = document.getElementById(targetPanelId);
+
+            if (!targetPanel) {
+                console.error(`Painel da aba com ID "${targetPanelId}" não encontrado.`);
+                return;
+            }
 
             tabButtons.forEach(btn => {
                 btn.classList.remove("active");
@@ -35,3 +43,5 @@ if (tabButtons.length > 0 && tabPanels.length > 0) {
         });
     });
 }
+
+initializeTabs();
